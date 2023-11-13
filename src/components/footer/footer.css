@@ -1,0 +1,148 @@
+.footer{
+    width: 70%;
+    display: flex;
+    align-self: center;
+    margin-top: 2rem;
+    background-color: #2C2A58;
+    gap:1rem;
+    padding: 2rem 4rem;
+    flex-direction: column;
+}
+
+.footer .top{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.footer .content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #fff;
+    white-space:pre;
+}
+
+
+.footer .title{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.footer .item{
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: rgb(217, 224, 231);
+    cursor: pointer;
+}
+.footer .item:hover{
+    color: #BB9A6B;
+}
+
+
+.footer .down{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.footer .down .left{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+.footer .down .title{
+    color: #fff;
+}
+
+.footer .stay{
+    color: rgb(130, 130, 131);
+    font-size: 0.9rem;
+}
+
+.footer .down .email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+}
+
+.footer .down .arrow{
+    background-color: #BB9A6B;
+    color: #fff;
+    height: 100%;
+    width: 2rem;
+    cursor: pointer;
+}
+.footer .down input{
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+    width: 14.5rem;
+
+}
+.footer .down input::placeholder{
+    font-size: 1rem;
+    color: grey;
+}
+
+
+.footer .middle{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.footer .middle:nth-child(3){
+    margin-top: 2rem;
+}
+
+.footer .phone{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+.footer .downdown{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+
+.footer .call{
+    color: aliceblue;
+    font-size: 0.8rem;
+}
+
+
+.footer .subtitle{
+    color: #fff;
+}
+
+.footer .socials{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .fb{
+    background-color: rgb(116, 116, 116);
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+.footer .fb:hover{
+    background-color: #BB9A6B;
+}
+
+@media screen and (max-width:1100px){
+    .footer{
+        width: 95%;
+    }
+}
