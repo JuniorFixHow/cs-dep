@@ -1,0 +1,29 @@
+.welcomeup{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0,0,0,0.3)), url('../../assets/6.jpg');
+    height: 12rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcomeup h3{
+    color: #fff !important;
+}
+
+.welcomeup .navi{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.welcomeup .navi .link{
+    cursor: pointer;
+}

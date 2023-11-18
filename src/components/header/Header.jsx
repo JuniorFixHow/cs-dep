@@ -1,8 +1,10 @@
 import React from 'react'
 import './header.css';
 import Logo from '../../assets/2.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <header className='header' >
         <div className="left">
@@ -11,11 +13,11 @@ const Header = () => {
             <span className="logotitle">DEPARTMENT OF COMPUTER SCIENCE</span>
         </div>
         <div className="right">
-            <span className="home">HOME</span>
-            <span className="home">ABOUT</span>
+            <span onClick={()=>navigate('/')} className="home">HOME</span>
+            <span onClick={()=>navigate('about')} className="home">ABOUT</span>
             <span className="home">FACULTY</span>
             <span className="home">BLOG</span>
-            <span className="home">CONTACT US</span>
+            <span onClick={()=>navigate('contact')} className="home">CONTACT US</span>
         </div>
     </header>
   )
