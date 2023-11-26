@@ -1,0 +1,78 @@
+.events{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 1rem;
+}
+
+.events .maincontent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+/* .events .slidecontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    overflow: hidden;
+} */
+.events .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    /* background-color: #2C2A58; */
+    height: 30rem;
+}
+.events h2{
+    color: #2C2A58;
+    width: 100%;
+    text-align: center;
+}
+.events .content{
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}
+
+.events img{
+    position: absolute;
+    /* height: 100%; */
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.events .title{
+    font-weight: bold;
+    color: #F3D5AC;
+    font-size: 3rem;
+    z-index: 999;
+}
+.events .date{
+    color: #F3D5AC;
+    font-weight: normal;
+    font-size: 2rem;
+    z-index: 999;
+    letter-spacing: 1px;
+}
+.events .desc{
+    color: #fff;
+    font-weight: normal;
+    font-size: 1rem;
+    z-index: 999;
+    letter-spacing: 1px;
+    width: 80%;
+    align-self: center;
+    position: absolute;
+    bottom: 3rem;
+}

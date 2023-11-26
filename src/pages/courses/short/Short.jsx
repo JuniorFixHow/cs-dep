@@ -1,84 +1,33 @@
 import React from 'react';
-import './home.css';
+import './short.css';
 import {RiGraduationCapLine} from 'react-icons/ri';
 import {PiCertificateBold} from 'react-icons/pi';
-import VIDEO1 from '../../assets/video1.mp4'
-import Four from '../../assets/4.jpg';
-import Eight from '../../assets/8.jpg';
-import Nine from '../../assets/9.jpg';
-import Ten from '../../assets/10.jpg';
-import Eleven from '../../assets/11.jpg';
+import Four from '../../../assets/4.jpg'
+import Eight from '../../../assets/8.jpg';
+import Nine from '../../../assets/9.jpg';
+import Ten from '../../../assets/10.jpg';
+import Eleven from '../../../assets/11.jpg';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
-import {useNavigate} from 'react-router-dom'
+import Welcome from '../../../components/welcome/Welcome';
+import TopCard from '../../../components/topCard/TopCard';
 // import 'swiper/css/scrollbar';
 
-const Home = () => {
-    const navigate = useNavigate()
+const Short = () => {
   return (
-    <div className='home' >
+    <div className='short' >
         <div className="top">
-            <video autoPlay muted className='video1' loop id='video1'>
+            {/* <video autoPlay muted className='video1' loop id='video1'>
                 <source src={VIDEO1} />
             </video>
-            <h1 className='vtitle' >YOUR GATEWAY TO THE WORLD CLASS COMPUTER SCIENCE EDUCATION</h1>
-            <div className="cards">
-                <div onClick={()=>navigate('/short-courses')} className="card">
-                    <div className="up">
-                        <span className="title">Short Courses</span>
-                    </div>
-                    <span className="text">
-                        Our eight week intensive certification course is open to senior high graduates, tertiary students, school graduates, workers and the general public
-                    </span>
-                    <button className="more">Read More</button>
-                </div>
-                <div className="card">
-                    <div className="up">
-                        <span className="title">Undergraduate programmes</span>
-                    </div>
-                    <span className="text">
-                    Open the door to sought-after technology careers with a world-class Bachelor of Science in Computer Science degree.
-                    </span>
-                    <button className="more">Read More</button>
-                </div>
-                <div className="card">
-                    <div className="up">
-                        <span className="title">Mphil and MSC programmes</span>
-                    </div>
-                    <span className="text">
-                    Embrace world class gradate education with unique blend of cutting-edge research and industry experience.
-                    </span>
-                    <button className="more">Read More</button>
-                </div>
-                <div className="card">
-                    <div className="up">
-                        <span className="title">PhD programmes</span>
-                    </div>
-                    <span className="text">
-                    Our PHDs lead the effort to extend the boundaries of knowledge through quality and industry relevant research.
-                    </span>
-                    <button className="more">Read More</button>
-                </div>
-            </div>
+            <h1 className='vtitle' >YOUR GATEWAY TO THE WORLD CLASS COMPUTER SCIENCE EDUCATION</h1> */}
+            <Welcome main='Short Courses Registration' title='Short Courses Registration' link='short-courses' />
+            <TopCard />
         </div>
-        <div className="center">
-            <div className="up">
-                <img src={Four} className='cleft' alt="" />
-                <div className="cright">
-                    <h3>Departmental Events</h3>
-                    <span className="desc">Programmes, seminars and events organized by the department</span>
-                    <span className="view">View upcoming and ongoing events</span>
-                </div>
-            </div>
-            <div className="down">
-                <h3>Short Courses we offer</h3>
-                <span className="desc">Our eight week intensive certificate course is open to senior high school graduates, tertiary students, school graduates, workers and the general public.</span>
-                <h6>Evening and Weekend Session Only</h6>
-            </div>
-        </div>
+       
         <div className="down">
             <div className="up">
                 <h3 className="join">Join our Short Course Program</h3>
@@ -149,4 +98,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Short

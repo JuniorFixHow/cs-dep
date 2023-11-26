@@ -1,0 +1,84 @@
+.topcard{
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+.topcard .cards{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    /* position: absolute; */
+    /* bottom: -8rem; */
+    /* background-color: yellow; */
+    height: 15rem;
+    /* margin-top: -2rem; */
+}
+
+ .topcard .cards .card{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    /* gap: 1rem; */
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+ .topcard .cards .up{
+    background-color: #cecdcd;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    display: flex;
+    height:  4rem;
+}
+ .topcard .cards .up2{
+    background-color: #BB9A6B;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    display: flex;
+    height:  4rem;
+}
+.topcard .cards .up:hover{
+   cursor: pointer;
+   background-color: #BB9A6B;
+}
+
+ .topcard .cards .title{
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    height:  4rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.topcard .cards .card .text{
+    font-size: 0.9rem;
+    color: rgb(68, 68, 83);
+    font-weight: 300;
+    text-align: center;
+    width: 80%;
+}
+.topcard .cards .card .text:hover{
+    color: rgb(123, 123, 245);
+}
+
+.topcard .cards .more{
+    border: none;
+    background: none;
+    color: #BB9A6B;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
